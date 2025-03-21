@@ -1,5 +1,5 @@
-import { ThemeProvider } from "@/components/ThemeProvider";
-import { ThemeToggler } from "@/components/ThemeToggler";
+import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
+import Nav from "@/components/Nav/Nav";
 import "./default.scss";
 
 export const metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <ThemeToggler />
+                    <Nav />
                     {children}
                 </ThemeProvider>
             </body>

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes"; // Import the hook to manage the theme
+import styles from "./ThemeToggler.module.scss"
 
 export function ThemeToggler() {
     const { theme, setTheme } = useTheme(); // Retrieve the current theme and the function to change it
@@ -35,14 +36,14 @@ export function ThemeToggler() {
     };
 
     return (
-        <button onClick={handleToggle}>
+        <button className={`${styles.button} section-title`} onClick={handleToggle}>
             {theme === "system"
                 ? systemTheme === "dark"
-                    ? "[light]"
-                    : "[dark]"
+                    ? "[ light ]"
+                    : "[ dark ]"
                 : theme === "dark"
-                ? "[light]"
-                : "[dark]"}
+                ? "[ light ]"
+                : "[ dark ]"}
         </button>
     );
 }

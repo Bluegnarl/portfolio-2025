@@ -1,6 +1,21 @@
-.page {
-  & > p {
-    font-weight: 300;
-    font-size: 48px;
-  }
+.header {
+    display: flex;
+    gap: 48px;
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        & .slogan {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    .description {
+        & a {
+                text-decoration: none;
+                color: var(--on-surface-0);
+        }
+    }
 }
