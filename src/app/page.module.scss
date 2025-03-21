@@ -18,13 +18,13 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 750px;
         gap: 48px;
 
         & .headerText {
             display: flex;
             flex-direction: column;
             gap: 48px;
+            max-width: 750px;
             & .contactLink {
                 display: flex;
                 align-items: center;
