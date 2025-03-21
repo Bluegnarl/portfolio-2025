@@ -1,0 +1,5 @@
+:root.dark {
+    // On utilise le .dark car on ne veut appliquer ce root que si html contient la class ".dark"
+    --surface: #0a0a0a;
+    --on-surface: #ededed;
+}
