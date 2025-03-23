@@ -213,7 +213,7 @@
     .text-4 {
         font-family: var(--font-family);
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 400;
         text-decoration: none;
     }
     .text-5 {
@@ -231,7 +231,7 @@
 
     .italic {
         font-family: var(--font-family);
-        font-size: 36px;
+        font-size: 34px;
         font-weight: 400;
         font-style: italic;
         text-decoration: none;
@@ -239,19 +239,81 @@
 
     .boldItalic {
         font-family: var(--font-family);
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 600;
         font-style: italic;
         text-decoration: none;
         line-height: 80%;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 1600px) {
         .title {
-            font-size: 64px;
+            font-size: 118px;
+        }
+        .subtitle {
+            font-size: 80px;
+        }
+
+        .text-1 {
+            
+        }
+        .text-2 {
+            font-size: 28px;
+        }
+        .text-3 {
+            
+        }
+        .text-4 {
+            font-size: 18px;
+        }
+
+        .italic {
+            font-size: 36px;
+        }
+        .boldItalic {
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .title {
+            font-size: 80px;
         }
         .subtitle {
             font-size: 48px;
+        }
+
+        .text-1 {
+            
+        }
+        .text-2 {
+            font-size: 20px;
+        }
+        .text-3 {
+            
+        }
+
+        .italic {
+            font-size: 32px;
+        }
+        .boldItalic {
+            font-size: 32px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .title {
+            font-size: 56px;
+        }
+        .subtitle {
+            font-size: 36px;
+        }
+
+        .italic {
+            font-size: 20px;
+        }
+        .boldItalic {
+            font-size: 20px;
         }
     }
 }

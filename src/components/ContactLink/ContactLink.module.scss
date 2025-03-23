@@ -1,0 +1,10 @@
+.contactLink {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: solid 1px var(--on-surface-0);
+    padding-bottom: 8px;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--on-surface-0);
+}
