@@ -1,7 +1,9 @@
 .nav {
     display: flex;
+    position: absolute;
     width: 100%;
     justify-content: space-between;
+    padding: 36px;
 
     & a {
         line-height: 36px;
@@ -37,6 +39,39 @@
         & .links {
             display: flex;
             gap: 24px;
+        }
+    }
+
+    & .menuButton {
+        display: none;
+        padding: 4px 12px;
+        position: fixed;
+        right: 24px;
+        top: 24px;
+        cursor: pointer;
+        background: var(--surface-variant);
+        color: var(--surface);
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .nav {
+        padding: 24px;
+        & .fillNav {
+            & .profile {
+                gap: 8px;
+                & .imageContainer {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+        & .options {
+            display: none;
+        }
+        & .menuButton {
+            display: flex;
         }
     }
 }

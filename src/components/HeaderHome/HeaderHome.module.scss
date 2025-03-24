@@ -1,6 +1,7 @@
 .headerWrapper {
     min-height: 100svh;
-    padding: 36px;
+    width: 100%;
+    padding: 15vh 36px 36px 36px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,10 +10,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         gap: 48px;
         padding: 64px 0;
         & .headerContent {
             display: flex;
+            width: 100%;
             & .presentation {
                 display: flex;
                 flex-direction: column;
@@ -35,14 +38,14 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                gap: 64px;
+                gap: 86px;
                 padding-top: 24px;
 
                 & .headerText {
                     display: flex;
                     flex-direction: column;
                     gap: 64px;
-                    max-width: 750px;
+                    max-width: 650px;
                 }
             }
         }
@@ -55,27 +58,29 @@
 }
 
 @media screen and (min-width: 1600px) {
-
 }
 
 @media screen and (max-width: 1120px) {
-    .headerWrapper .header .headerContent {
-        flex-direction: column;
-        gap: 48px;
-        & .presentation {
-            gap: 36px;
-            & .slogan {
-                gap: 8px;
+    .headerWrapper {
+        padding: 56px 36px 36px 36px;
+        & .header .headerContent {
+            flex-direction: column;
+            gap: 48px;
+            & .presentation {
+                gap: 36px;
+                & .slogan {
+                    gap: 8px;
+                }
+                & img {
+                    width: 100%;
+                    height: fit-content;
+                }
             }
-            & img {
-                width: 100%;
-                height: fit-content;
-            }
-        }
 
-        & .description {
-            gap: 36px;
-            padding-top: 0;
+            & .description {
+                gap: 36px;
+                padding-top: 0;
+            }
         }
     }
 }

@@ -11,7 +11,6 @@ import videoPreview from "../../assets/images/videoPreview.png";
 export default function HeaderHome() {
     return (
         <section className={styles.headerWrapper}>
-            <Nav />
             <header className={styles.header}>
                 <div className={styles.headerContent}>
                     <div className={styles.presentation}>

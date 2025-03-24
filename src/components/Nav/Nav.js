@@ -1,6 +1,7 @@
 import styles from "./Nav.module.scss";
 import Link from "next/link";
 import NavLink from "./NavLink";
+import MenuLink from "./MenuLink";
 import Image from "next/image";
 import { ThemeToggler } from "../ThemeProvider/ThemeToggler";
 import profileImage from "../../assets/images/profile.png";
@@ -28,6 +29,9 @@ export default function Nav() {
                     <NavLink href={"/contact"}>Contact</NavLink>
                 </div>
                 <ThemeToggler />
+            </div>
+            <div className={styles.menuButton}>
+                Menu
             </div>
         </nav>
     );

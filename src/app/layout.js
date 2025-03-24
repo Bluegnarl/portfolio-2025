@@ -1,6 +1,7 @@
 import "./default.scss";
 
 import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
+import Nav from "@/components/Nav/Nav";
 
 export const metadata = {
     title: "Koçak Ali - Développeur & Designer",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
                     enableSystem
                     disableTransitionOnChange
                 >
+                    <Nav />
                     {children}
                 </ThemeProvider>
             </body>

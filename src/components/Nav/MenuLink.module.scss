@@ -1,0 +1,9 @@
+.menuLink {
+    line-height: 36px;
+    text-decoration: none;
+    color: var(--on-surface-0);
+
+    &.active {
+        border-bottom: solid 1px var(--on-surface-0);
+    }
+}
