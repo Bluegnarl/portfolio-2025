@@ -31,7 +31,7 @@ export default function Nav() {
                 <ThemeToggler />
             </div>
             <div className={styles.menuButton}>
-                <p className="text-4">Menu</p>
+                <p className="text-4" style={{fontWeight: 500}}>Menu</p>
             </div>
         </nav>
     );
