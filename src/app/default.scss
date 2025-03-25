@@ -2,7 +2,7 @@
 @use "../assets/styles/light" as *;
 @use "../assets/styles/dark" as *;
 
-* {
+*, ::after, ::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -21,4 +21,5 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: color .3s ease-in, background .3s ease-in !important;
 }
